@@ -42,9 +42,9 @@ func (n *networkRouter) getNetworksList(ctx context.Context, w http.ResponseWrit
 
 	list := []types.NetworkResource{}
 
-	if nr, err := n.cluster.GetNetworks(); err == nil {
-		list = append(list, nr...)
-	}
+	//if nr, err := n.cluster.GetNetworks(); err == nil {
+	//	list = append(list, nr...)
+	//}
 
 	// Combine the network list returned by Docker daemon if it is not already
 	// returned by the cluster manager
